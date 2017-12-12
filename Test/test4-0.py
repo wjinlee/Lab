@@ -1,10 +1,6 @@
-i = 1
-j = 1
+import os
 
-for j in range(1, 6):
-    for i in range(1, j+1):
-        print('*', end='')
-        i += 1
-    print('')
-    j += 1
+for x in os.listdir('D:\Octave\Octave-4.2.1'):
+    if x.endswith('exe'):
+        print(x)
 
